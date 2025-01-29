@@ -26,3 +26,4 @@ pnpm-debug.log*
 # Pinegrow
 _pginfo
 _pgbackup
+tailwind_theme

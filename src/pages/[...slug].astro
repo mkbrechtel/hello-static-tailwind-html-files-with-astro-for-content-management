@@ -1,0 +1,33 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { loadPage, listPages } from "../utils/htmlPages";
+
+export async function getStaticPaths() {
+    const pages = await listPages();
+
+    return pages.map((page) => ({
+        // For index.html, set slug to undefined to generate the root route (/)
+        // For all other pages, use the page path as the slug
+        params: { slug: page === "index" ? undefined : page },
+        props: { pagename: page },
+    }));
+}
+
+const { pagename } = Astro.props;
+const pageContent = await loadPage(pagename);
+const { title, description, keywords, body } = pageContent;
+---
+
+<Layout>
+    <head slot="head">
+        {title && <title>{title}</title>}
+        {description && <meta name="description" content={description} />}
+        {keywords && <meta name="keywords" content={keywords} />}
+    </head>
+
+    <Navbar />
+    <main>
+        <Fragment set:html={body} />
+    </main>
+</Layout>
