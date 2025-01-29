@@ -99,3 +99,9 @@ npm run build
    - Work in Pinegrow
    - Edit HTML files directly
    - Preview on draft server
+
+## 📋 License
+
+The code is "un"licensed under the You are free to copy, modify, publish, use, sell - do whatever you want with this code and content. So you can just copy&paste everything in here.
+
+Check the UNLICENSE file for more details.
