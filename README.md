@@ -1,4 +1,4 @@
-# Static HTML Content with Tailwind, Pinegrow and Astro
+# Hello static Tailwind HTML files with Astro for Content Mnagement
 
 A streamlined workflow for content editors to create and manage website content using Pinegrow and HTML files, while leveraging Astro's build system for deployment.
 
