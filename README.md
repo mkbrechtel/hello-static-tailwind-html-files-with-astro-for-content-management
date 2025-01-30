@@ -52,9 +52,9 @@ npm run dev
 ## 📝 Content Creation Guidelines
 
 1. All content goes in `content/pages/*.html`
-2. Use only the `<body>` content (templates handle the rest)
-3. Use Tailwind classes for styling
-4. Reference assets from `/public` directory
+2. Use Tailwind classes for styling
+
+TODO: images/assets
 
 ## 🛠️ Technical Details
 
